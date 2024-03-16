@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "5356b2db-dd78-412e-b399-e1670c2cf235",
+		"name": "Todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27579601"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-hex-ts1r.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-hex-ts1r",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-hex-ts1r.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-hex-ts1r",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-hex-ts1r.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-hex-ts1r",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-hex-ts1r.onrender.com/todos/6cafa316-6a14-4a69-936e-d91e37902b4a",
+					"protocol": "https",
+					"host": [
+						"todolist-hex-ts1r",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"6cafa316-6a14-4a69-936e-d91e37902b4a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"今天要洗澡\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-hex-ts1r.onrender.com/todos/cf3c74da-695d-4b17-a149-6e80f04d1701",
+					"protocol": "https",
+					"host": [
+						"todolist-hex-ts1r",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"cf3c74da-695d-4b17-a149-6e80f04d1701"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
