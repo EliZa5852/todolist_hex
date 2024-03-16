@@ -102,4 +102,4 @@ const requestLintner = (req,res) => {
     }
 }
 const server = http.createServer(requestLintner)
-server.listen(3000)
+server.listen(process.env.PORT || 3000)
